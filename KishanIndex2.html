@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Money Manager</h2>
+
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <input type="email" id="email-input" placeholder="Enter your email" required>
+        <button id="view-transactions">View Transactions</button>
+    </div>
+
+    <div class="balance">
+        Balance: <span id="balance">0.00</span>
+    </div>
+    <ul id="transaction-list" class="transaction-list">
+        <!-- Transactions will be added here dynamically -->
+    </ul>
+    <form id="transaction-form" class="transaction-form">
+        <select id="description" required>
+            <option value="" disabled selected>Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Education">Education</option>
+            <option value="Health">Health</option>
+        </select>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Add Transaction</button>
+    </form>
+    <button id="clear-all">Clear All Transactions</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

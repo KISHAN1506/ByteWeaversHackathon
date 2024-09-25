@@ -1,0 +1,11 @@
+.button-container {
+    text-align: right; /* Aligns the button to the right */
+    padding-right: 20px; /* Optional: Adds space to the right of the button */
+}
+
+
+
+button{
+    background-color: rgb(111, 45, 45);
+    align : "right";
+}
